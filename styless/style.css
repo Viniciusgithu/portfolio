@@ -7,6 +7,10 @@
   font-family: 'Josefin Sans', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
@@ -132,7 +136,7 @@ span {
 }
 
 .about-me .info button {
-  color: white;
+  color: #ffff;
   background: #45C4B0;
   height: 3em;
   width: 11em;
@@ -263,6 +267,17 @@ footer h3 {
     height: auto;
   }
 
+  .container-header ul a {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .projects {
+    padding: 3em;
+  }
+
 }
 
 @media (max-width: 600px) {
@@ -292,6 +307,10 @@ footer h3 {
     height: auto;
   }
 
+  .about-me .info button {
+    margin-left: 3em;
+  }
+
 }
 
 ::-webkit-scrollbar {
@@ -302,3 +321,5 @@ footer h3 {
   background-color: whitesmoke;
   border-radius: 10px;
 }
+
+
