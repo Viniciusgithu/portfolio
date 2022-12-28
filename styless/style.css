@@ -303,7 +303,7 @@ footer h3 {
 @media (max-width: 600px) {
   .imgs {
     position: relative;
-    width: 60%;
+    width: 50%;
     height: auto;
     margin-top: 1em;
   }
