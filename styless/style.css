@@ -129,40 +129,63 @@ span {
   text-transform: uppercase;
 }
 
+.info {
+  text-align: center;
+}
+
 .about-me .info p {
   color: white;
   width: 20em;
   text-align: justify;
+  margin-top: 2em;
+  margin-bottom: 3em;
 }
 
-.about-me .info button {
+.about-me .info a {
   color: #ffff;
-  background: #45C4B0;
+  background: transparent;
   height: 3em;
   width: 11em;
   padding: .5em;
   font-size: 18px;
-  border: none;
+  border: 3px dashed #012030;
   border-radius: 1.6em;
-  margin-top: 1em;
+
 }
 
-.about-me .info button:hover {
-  background-color: #DAFDBA;
-  border: 3px solid #012030;
+.about-me .info a:hover {
+  background-color: #13678A;
+  border: 3px solid #ade8f4;
   transition: 0.5s;
 }
 
+.attention {
+  color: white;
+  opacity: 1;
+  transition-duration: 0.5;
+}
+
+
 .projects {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
   background-color: #012030;
   padding: 60px 0;
 }
 
-.project-one {
+.projects h4 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+.conj-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cards {
   width: 300px;
   height: 300px;
   margin-top: 5em;
@@ -171,41 +194,37 @@ span {
   margin-right: 2em;
   padding-bottom: 2em;
   padding: 2em;
-}
-
-
-.project-img {
-  display: flex;
-  justify-self: center;
-  align-items: center;
-  flex-direction: column;
   text-align: center;
 }
 
-p {
-  font-weight: bold;
-  color: white;
-  margin-top: 2em;
-}
-
-.project-one button {
-  color: white;
-  background: #45C4B0;
+.cards a {
+  color: #ffff;
+  background: transparent;
+  height: 3em;
+  width: 11em;
   padding: .5em;
   font-size: 18px;
-  border: none;
+  border: 3px dashed #012030;
   border-radius: 1.6em;
-  margin-top: 1em;
 }
 
-.project-one button:hover {
-  background-color: #DAFDBA;
-  border: 3px solid #012030;
+
+.cards p {
+  font-weight: bold;
+  color: white;
+  margin-top: 1em;
+  margin-bottom: 10%;
+}
+
+
+.cards a:hover {
+  background-color: #13678A;
+  border: 3px solid #ade8f4;
   transition: 0.5s;
 }
 
 
-.cronometro, h3 {
+.cards h3 {
   color: white;
 }
 
@@ -239,13 +258,14 @@ footer button:hover{
 footer h3 {
   text-align: center;
   font-size: 2em;
+  color: white;
 }
 
 
 @media (max-width: 850px) {
   .imgs {
     position: relative;
-    width: 50%;
+    width: 60%;
     height: auto;
   }
   
@@ -303,14 +323,28 @@ footer h3 {
   }
   
   .programming img {
-    width: 80%;
+    width: 90%;
     height: auto;
   }
 
-  .about-me .info button {
-    margin-left: 3em;
+  .about-me .info p {
+    margin-top: 3em;
   }
 
+}
+
+@media (max-width: 300px) {
+  
+  .cards a {
+    color: #ffff;
+    background: transparent;
+    height: 3em;
+    width: 11em;
+    padding: .5em;
+    font-size: 18px;
+    border: 3px dashed #012030;
+    border-radius: 1.6em;
+  }
 }
 
 ::-webkit-scrollbar {
