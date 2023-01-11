@@ -6,22 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styless/style.css" />
     <link rel="shortcut icon" href="./imgs/porfolio.png" type="image/x-icon" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Vinicius Pazos</title>
   </head>
   <body>
                   <!- Header -->
     <section class="box-section-one">
       <section class="container-header">
-        <header>
-          <h2>Portfó<span>lio</span></h2>
-        </header>
-        <nav>
-          <ul>
-            <li><a href="#about">Sobre mim</a></li>
-            <li><a href="#project">Projetos</a></li>
-            <li><a href="#contacts">Saiba mais</a></li>
-          </ul>
-        </nav>
+        <div class="separation">
+          <header>
+            <h2>Portfó<span>lio</span></h2>
+          </header>
+
+          <nav class="navbar">
+            <ul>
+              <li class="active-list">
+                <a href="#about">
+                  <i class='bx bx-home-smile'></i>
+                  <i class='bx bxs-home-smile activeIcon'></i>
+                </a>
+              </li>
+              <li>
+                <a href="#project">
+                  <i class='bx bx-code'></i>
+                  <i class='bx bx-code-alt activeIcon'></i>
+                </a>
+              </li>
+              <li>
+                <a href="#contacts">
+                  <i class='bx bx-info-circle'></i>
+                  <i class='bx bxs-info-circle activeIcon' ></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </section>
 
       <section class="home" id="home">

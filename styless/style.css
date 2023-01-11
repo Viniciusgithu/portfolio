@@ -16,7 +16,11 @@ a {
 }
 
 ul {
-  list-style: none;
+  list-style-type: none;
+}
+
+span {
+  color: #45C4B0;
 }
 
 .box-section-one {
@@ -25,7 +29,7 @@ ul {
   background: #012030;
 }
 
-.container-header {
+.separation {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -40,25 +44,53 @@ ul {
   font-weight: bold;
 }
 
-span {
-  color: #45C4B0;
-}
-
-.container-header ul {
+.navbar {
+  position: relative;
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 0.8em;
+  margin-right: 2em;
+  background: white;
+  width: 8em;
+  height: 3em;
+  border-radius: 2em;
 }
 
-.container-header ul li a {
-  color: white;
+.navbar ul li {
+  position: relative;
 }
 
-.container-header ul li a:hover {
-  background-color: #45C4B0;
-  border-radius: 3em;
-  padding: 1em;
-  transition: 0.5s;
+.navbar ul li a {
+  position: relative;
+  font-size: 1.5em;
+  padding: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar ul li a i {
+  position: absolute;
+  font-size: 1.5em;
+  color: #13678A;
+}
+
+
+.activeIcon {
+  opacity: 0;
+}
+
+.navbar ul li.active-list a i {
+  opacity: 1;
 }
 
 
@@ -82,6 +114,9 @@ span {
   color: white;
 }
 
+.info picture img {
+  width: 30em;
+}
 
 .about-me {
   display: flex;
@@ -238,42 +273,25 @@ footer h3 {
 }
 
 
-@media (max-width: 850px) {
-  .imgs {
-    position: relative;
-    width: 60%;
-    height: auto;
-  }
+@media (max-width: 450px) {
   
-  .imgs img {
-    display: block;
-    width: 100%;
-  }
-  
-  .programming {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-  
-  .programming img {
-    width: 80%;
-    height: auto;
+  .separation header {
+    display: none;
   }
 
-  .container-header ul a {
+   .navbar ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
-    gap: 10px;
+    height: 3em;
+
   }
 
-  .projects {
-    padding: 3em;
+  .home img {
+    height: 24.4em;
   }
-
+    
 }
 
 ::-webkit-scrollbar {

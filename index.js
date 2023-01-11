@@ -17,8 +17,6 @@ function typeWriter(element){
 }
 
 
-
-
 function blink (){
 
   if (test < 1){
@@ -32,7 +30,20 @@ function blink (){
 }
 
 
-
 typeWriter(title)
 
 setInterval(blink, 500)
+
+
+let navBar = document.querySelector('.navbar');
+let allLi = document.querySelectorAll('li')
+
+allLi.forEach((item)=>{
+
+  item.addEventListener('click', e => {
+      navBar.querySelector('.active-list').classList.remove('active-list')
+
+      item.classList.add('active-list')
+  })
+
+});
