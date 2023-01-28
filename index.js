@@ -1,8 +1,8 @@
-let attention = document.querySelector('.attention');
+let attention = document.querySelector('.whats');
 let test = 0;
 
 const title = document.querySelector('h1');
-const developer = document.querySelector('#dev');
+
 
 function typeWriter(element){
 
@@ -10,7 +10,7 @@ function typeWriter(element){
   element.innerHTML = '';
   textArray.forEach((lyrics, i) => {
 
-    setTimeout(() => element.innerHTML += lyrics, 150 * i);
+    setTimeout(() => element.innerHTML += lyrics, 350 * i);
 
   });
 
@@ -32,18 +32,5 @@ function blink (){
 
 typeWriter(title)
 
-setInterval(blink, 500)
+setInterval(blink, 900)
 
-
-let navBar = document.querySelector('.navbar');
-let allLi = document.querySelectorAll('li')
-
-allLi.forEach((item)=>{
-
-  item.addEventListener('click', e => {
-      navBar.querySelector('.active-list').classList.remove('active-list')
-
-      item.classList.add('active-list')
-  })
-
-});

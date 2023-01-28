@@ -7,192 +7,173 @@
     <link rel="stylesheet" href="./styless/style.css" />
     <link rel="shortcut icon" href="./imgs/porfolio.png" type="image/x-icon" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <title>Vinicius Pazos</title>
   </head>
   <body>
-                  <!- Header -->
-    <section class="box-section-one">
-      <section class="container-header">
-        <div class="separation">
-          <header>
-            <h2>Portfó<span>lio</span></h2>
-          </header>
-
-          <nav class="navbar">
-            <ul>
-              <li class="active-list">
-                <a href="#about">
-                  <i class='bx bx-home-smile'></i>
-                  <i class='bx bxs-home-smile activeIcon'></i>
-                </a>
-              </li>
-              <li>
-                <a href="#project">
-                  <i class='bx bx-code'></i>
-                  <i class='bx bx-code-alt activeIcon'></i>
-                </a>
-              </li>
-              <li>
-                <a href="#contacts">
-                  <i class='bx bx-info-circle'></i>
-                  <i class='bx bxs-info-circle activeIcon' ></i>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </section>
-
-      <section class="home" id="home">
-        <article class="info">
-          <h1>Vinicius Lima Pazos</h1>
-          <p><span>Desenvolvedor Front-End</span>💻</p>
-          <picture><img src="./imgs/logo-portfolio.png" alt="Imagem de um desenvolvedor" /></picture>
-        </article>
-      </section>
-    </section>
-                  <!- About-me -->
-    <section class="about-me">
-      <picture>
-        <img src="./imgs/vinicius-pazos.png" alt="Imagem Dev Vinicius Pazos" />
-      </picture>
-      <div class="info" id="about">
-        <h2>Sobre mim</h2>
-        <p>
-          Sou natural de Recife-PE, tenho 27 anos. Estou em <span>transição de carreira</span>, passei mais de <span>5 anos lecionando Ciências Humanas</span>. Com essa bagagem de experiência, busco ser um <span>Programador Front End</span>. Atualmente curso <span>Análise e Desenvolvimento de Sistemas</span> na Universidade Cesumar (UNICESUMAR). Indo além, estudo as tecnologias: <span>HTML, CSS, JavaScript, Git & GitHub</span>, que, fazem parte do meu dia a dia desde o início de 2020. Visando
-          aprofundar os meus estudos e pensamentos, atualmente estudo:
-          <span>NodeJs e ReactJs</span>.
+    <!- Header -->
+    <header>
+      <section class="container">
+        <h2>Olá!</h2>
+        <h1>Eu sou Vinicius</h1>
+        <p> 
+          Sou desenvolvedor Front-End 💻, buscando a primeira oportunidade no universo da tecnologia. 
         </p>
+        <button>Seja bem vindo(a)!</button>
+      </section>
+    </header>
 
-        <a href="tel:+5581999979544" class="attention">Entre em contato 📞 </a>
+    <!- Navegation -->
+    <nav>
+      <img src="./imgs/Vinicius_Pazos_Porfólio.png" alt="logo-vinicius-pazos">
+
+      <ul>
+        <a href="">
+          <i class='bx bxl-html5'></i>
+        </a>
+        <a href="">
+          <i class='bx bxl-css3'></i>
+        </a>
+        <a href="">
+          <i class='bx bxl-javascript'></i>
+        </a>
+        <a href="">
+          <i class='bx bxl-react'></i>
+        </a>
+      </ul>
+    </nav>
+       
+    <!- About-me -->
+    <section class="container-about-me">
+      <div class="about-me">
+        <h1>Sobre mim</h1>
+        <p>Sou um Pernambucano arretado buscando ser um programdor Full Stack, atualmente é o meu maior desafio. Além de estudar as tecnologias Web (HTML, CSS, JavaScript, framework React), estudo Node.JS. Sou estudante do curso de Análise e Desenvolvimento de Sistemas na Universidade Cesumar (UNICESUMAR).<br><br>
+        Amo estudar, tomar café, ler livros de literatura, construir um ambiente massa de trabalho.</p>
+      </div>
+
+      <div class="img-container">
+        <img src="./imgs/vinicius-pazos.png" alt="Imagem Dev Vinicius Pazos" />
+      </div>
+  </section>  
+
+  <section class="service">
+    <h1>Serviços</h1>
+    <div class="services-container">
+      <div class="service-card">
+        <i class='bx bx-news'></i>
+        <h2>Desenvolvimento <br> de sites</h2>
+      </div>
+
+      <div class="service-card">
+        <i class='bx bx-code-alt'></i>
+        <h2>Desenvolvimento  <br> de aplicações web</h2>
+      </div>
+
+      <div class="service-card">
+        <i class='bx bx-purchase-tag'></i>
+        <h2>Desenvolvimento <br> de Páginas captura</h2>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="portfolio">
+    <h1>Portfólio</h1>
+
+    <div class="portfolio-container">
+
+      <div class="portfolio-card">
+        <div class="portfolio-icon">
+          <a href="https://miniporfolio-vinicius-pazos.vercel.app" target="_blank">
+            <img src="./imgs/porfolio.png" alt="logo-portfolio">
+          </a>
+        </div>
+        
+        <div class="language-container">
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+          </ul>
+        </div>
+          
+          <p>1️⃣ Miniportfólio</p>
+          <p>Aplicação desenvolvida durante a semana Mapa Dev Week.Os estudos foram focados nas tecnologias front-end.</p>
 
       </div>
-    </section>
-                  <!- Projects -->
-    <section class="projects" id="project">
-      <h4>Proj<span>etos</span>:</h4>
 
-      <div class="conj-cards">
-        <section class="cards">
-          <picture>
-            <img src="./imgs/porfolio.png" alt="Miniportfólio" />
-          </picture>
-
-          <h3> 1️⃣ Miniportfólio</h3>
-          <p>
-            Aplicação desenvolvida durante a semana <span>Mapa Dev Week</span>. Os
-            estudos foram focados nas <span>tecnologias front-end</span>.
-          </p>
-
-            <a
-              href="https://miniporfolio-vinicius-pazos.vercel.app/"
-              target="_blank"
-              >🔗 Ver projeto</a
-            >
-
-        </section>
-
-        <section class="cards">
-          <picture>
-            <img src="./imgs/hotel.png" alt="Hotel" />
-          </picture>
-
-          <h3> 2️⃣ Hotel dez corações</h3>
-          <p>
-            Prática lapidada para estudar as propriedades <span>flexbox</span>. Os
-            aprendizados se deram a partir do curso da <span>Origamid</span>.
-          </p>
-
-            <a
-              href="https://viniciusgithu.github.io/hotel-dez-coracoes/"
-              target="_blank"
-              >🔗 Ver projeto</a
-            >
-
-        </section>
-
-        <section class="cards">
-          <picture>
-            <img src="./imgs/workshop.png" alt="workshop" />
-          </picture>
-
-          <h3> 3️⃣ Workshop </h3>
-          <p>
-            Desenvolvido com o intuito de praticar as <span>páginas de captura</span>.
-            O Workshop fictício buscava capturar: <span>nomes</span>,
-            <span>email</span> e enviar <span>newsletter sobre tecnologia</span>.
-          </p>
-
-            <a
-              href="https://workshop-pag-captura.vercel.app"
-              target="_blank"
-              >🔗 Ver projeto</a
-            >
-
-        </section>
-
-        <section class="cards">
-          <picture>
-            <img src="./imgs/todo.png" alt="lista-de-tarefas" />
-          </picture>
-
-          <h3> 4️⃣ Lista de Tarefas </h3>
-          <p>
-            Projeto criado para progredir a lógica do <span>JavaScript</span>.
-            A compreensão foi focada no uso do <span>this</span>,
-            <span>localStorage</span>, <span>manipulação do dom</span>.
-          </p>
-
-            <a
-              href="https://lista-de-tarefas-chi.vercel.app"
-              target="_blank"
-              >🔗 Ver projeto</a
-            >
-
-        </section>
-
-        <section class="cards">
-          <picture>
-            <img src="./imgs/cronometro.png" alt="Cronometro" />
-          </picture>
-
-          <h3> 5️⃣ Cronômetro</h3>
-          <p>
-            Projeto elaborado para exercitar a lógica do <span>JavaScript</span>.
-            A compreensão foi focada no uso de <span>funções</span>,
-            <span>método assíncrono</span>, <span>manipulação do dom</span>.
-          </p>
-
-            <a
-              href="https://viniciusgithu.github.io/repository-stopwatch/"
-              target="_blank"
-              >🔗 Ver projeto</a
-            >
-
-        </section>
-
-      </div>  
-    </section>
-                    <!- Footer -->
-    <footer id="contacts">
-      <section class="plus-info">
-        <h3>Para <span>mais informações</span>:</h3>
-        <p></p>
-      </section>
-
-      <section class="logo-info">
-        <button>
-          <a href="https://github.com/Viniciusgithu" target="_blank">
-            <img src="./imgs/github.png" alt="GitHub" />
+      <div class="portfolio-card">
+        <div class="portfolio-icon">
+          <a href="https://viniciusgithu.github.io/hotel-dez-coracoes" target="_blank">
+            <img src="./imgs/hotel.png" alt="logo-portfolio">
           </a>
-        </button>
-        <button>
-          <a href="https://www.linkedin.com/in/viniciuspazos" target="_blank">
-            <img src="./imgs/linkedin.png" alt="Linkedin" />
+        </div>
+        
+        <div class="language-container">
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+          </ul>
+        </div>
+          
+          <p>2️⃣ Hotel dez corações</p>
+          <p>Prática lapidada para estudar as propriedades flexbox. Os aprendizados se deram a partir do curso da Origamid.</p>
+
+      </div>
+
+      <div class="portfolio-card">
+        <div class="portfolio-icon">
+          <a href="https://workshop-pag-captura.vercel.app" target="_blank">
+            <img src="./imgs/workshop.png" alt="logo-portfolio">
           </a>
-        </button>
-      </section>
-    </footer>
+        </div>
+        
+        <div class="language-container">
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+          </ul>
+        </div>
+          
+          <p>3️⃣ Workshop</p>
+          <p>Desenvolvido com o intuito de praticar as páginas de captura. O Workshop fictício buscava capturar: nomes, email e enviar newsletter sobre tecnologia.</p>
+
+      </div>
+
+
+
+      
+    
+
+
+
+    </div>
+
+  </section>
+
+  <section class="contact">
+    <h1>Vamos trabalhar juntos?</h1>
+    <p>Se você gostou do meu trabalho e quer que eu tire sua ideia do papel ou faça parte do seu time, entre em contato comigo.</p>
+    <button>
+      <a href="mailto:viniciuspazosdoc@gmail.com?subject=Solicitação de Serviços">Enviar um email</a>
+    </button>
+
+    <div class="social-media">
+      <a href="https://github.com/Viniciusgithu" target="_blank">
+        <img src="./imgs/github.png" alt="">
+      </a>
+      <a href="https://www.linkedin.com/in/viniciuspazos" target="_blank">
+        <img src="./imgs/linkedin.png" alt="">
+      </a>
+  </section>
+
+    <section class="whats">
+      <a href="https://wa.me/5581999979544" target="_blank">
+        <img src="./imgs/what.png" alt="">
+      </a>
+    </section>
 
     <script src="./index.js"></script>
   </body>
